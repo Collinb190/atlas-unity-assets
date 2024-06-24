@@ -34,8 +34,8 @@ public class DatabasesManager : EditorWindow
         EditorGUILayout.Space();
 
         // Buttons to access other windows
-        // if (GUILayout.Button("Weapon Database")) WeaponDatabase.ShowWindow();
-        // if (GUILayout.Button("Potion Database")) PotionDatabase.ShowWindow();
-        // if (GUILayout.Button("Armor Database")) ArmorDatabase.ShowWindow();
+        if (GUILayout.Button("Weapon Database")) WeaponDatabase.ShowWindow();
+        if (GUILayout.Button("Potion Database")) PotionDatabase.ShowWindow();
+        if (GUILayout.Button("Armor Database")) ArmorDatabase.ShowWindow();
     }
 }
