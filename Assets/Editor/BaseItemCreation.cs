@@ -52,7 +52,7 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
         }
         else if (typeof(T) == typeof(Armor))
         {
-            folderPath += "Armor/";
+            folderPath += "Armors/";
         }
         else if (typeof(T) == typeof(Potion))
         {
