@@ -29,9 +29,22 @@ public abstract class ItemDatabase<T> : EditorWindow where T : class
         GUILayout.EndHorizontal();
     }
 
-    protected void DeleteSelectedItem()
+    protected virtual void DeleteSelectedItem()
     {
-        //Delete item
+        if (selectedItem == null)
+        {
+            EditorUtility.DisplayDialog("Error", "No item selected to delete.", "OK");
+            return;
+        }
+
+        bool confirmDelete = EditorUtility.DisplayDialog("Confirm Delete", "Are you sure you want to delete this item?", "Delete", "Cancel");
+        if (confirmDelete)
+        {
+            string assetPath = AssetDatabase.GetAssetPath(selectedItem as UnityEngine.Object);
+            AssetDatabase.DeleteAsset(assetPath);
+            AssetDatabase.Refresh();
+            selectedItem = null; // Clear selected item after deletion
+        }
     }
 
     protected void DuplicateSelectedItem()

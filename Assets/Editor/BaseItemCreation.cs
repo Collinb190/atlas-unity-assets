@@ -30,7 +30,16 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
     protected bool IsDuplicateName(string name, string folderPath)
     {
         string[] guids = AssetDatabase.FindAssets($"t:{typeof(T).Name} {name}", new[] { folderPath });
-        return guids.Length > 0;
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            T existingItem = AssetDatabase.LoadAssetAtPath<T>(path);
+            if (existingItem != null && existingItem.itemName == name)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     protected void CreateItem(T newItem)
@@ -53,7 +62,7 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
         // Check for duplicate names
         if (IsDuplicateName(itemName, folderPath))
         {
-            EditorUtility.DisplayDialog("Error", "A item with this name already exists!", "OK");
+            EditorUtility.DisplayDialog("Error", "An item with this name already exists!", "OK");
             return;
         }
 
