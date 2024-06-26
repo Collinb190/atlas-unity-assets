@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PotionDatabase : ItemDatabase<Potion>
@@ -54,6 +55,7 @@ public class PotionDatabase : ItemDatabase<Potion>
 
             potion.description = EditorGUILayout.TextField("Description: ", potion.description);
             potion.baseValue = EditorGUILayout.FloatField("Base Value: ", potion.baseValue);
+            potion.requiredLevel = EditorGUILayout.IntField("Required Level: ", potion.requiredLevel);
             potion.rarity = (Rarity)EditorGUILayout.EnumPopup("Rarity: ", potion.rarity);
             EditorGUILayout.Space();
 
