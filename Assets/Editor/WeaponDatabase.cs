@@ -43,4 +43,16 @@ public class WeaponDatabase : ItemDatabase<Weapon>
         // Implement importing weapons from CSV
         Debug.Log("Importing weapons from CSV...");
     }
+
+    private void OnGUI()
+    {
+        EditorGUILayout.LabelField("Weapon Database", EditorStyles.boldLabel);
+
+        if (GUILayout.Button("Create New Weapon"))
+        {
+            WeaponCreation.ShowWindow();
+        }
+
+        // Draw the rest of the GUI here
+    }
 }

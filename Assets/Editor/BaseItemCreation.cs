@@ -11,7 +11,7 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
     protected float baseValue;
     protected int requiredLevel;
     protected Rarity rarity;
-    
+
     public static void ShowWindow()
     {
         EditorWindow.GetWindow(typeof(BaseItemCreation<T>), true, "Create New Item");
@@ -27,10 +27,14 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
         rarity = (Rarity)EditorGUILayout.EnumPopup("Rarity:", rarity);
     }
 
-    protected void CreateItem<T>() where T : BaseItem
+    protected bool IsDuplicateName(string name, string folderPath)
     {
-        T newItem = CreateInstance<T>();
+        string[] guids = AssetDatabase.FindAssets($"t:{typeof(T).Name} {name}", new[] { folderPath });
+        return guids.Length > 0;
+    }
 
+    protected void CreateItem(T newItem)
+    {
         // Determine the folder path based on the type of item
         string folderPath = "Assets/Items/";
         if (typeof(T) == typeof(Weapon))
@@ -46,23 +50,29 @@ public abstract class BaseItemCreation<T> : EditorWindow where T : BaseItem
             folderPath += "Potions/";
         }
 
-        // Create the directory if it doesn't exist
-        if (!AssetDatabase.IsValidFolder(folderPath))
+        // Check for duplicate names
+        if (IsDuplicateName(itemName, folderPath))
         {
-            System.IO.Directory.CreateDirectory(Application.dataPath + folderPath.Substring("Assets".Length));
-            AssetDatabase.Refresh();
+            EditorUtility.DisplayDialog("Error", "A item with this name already exists!", "OK");
+            return;
         }
+
+        // Assign entered values to the item fields
+        newItem.itemName = itemName;
+        newItem.icon = icon;
+        newItem.description = description;
+        newItem.baseValue = baseValue;
+        newItem.requiredLevel = requiredLevel;
+        newItem.rarity = rarity;
+
+        EditorUtility.SetDirty(newItem);
 
         // Define the full path for the asset
         string fullPath = folderPath + itemName + ".asset";
         fullPath = AssetDatabase.GenerateUniqueAssetPath(fullPath);
 
         AssetDatabase.CreateAsset(newItem, fullPath);
-        
-        newItem.itemName = itemName;
-        newItem.baseValue = baseValue;
-        newItem.rarity = rarity;
-        
+
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }

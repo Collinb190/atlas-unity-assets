@@ -10,9 +10,7 @@ public abstract class BaseItem : ScriptableObject
     public Sprite icon;
     public string description;
     public float baseValue;
-    public Rarity rarity;
     public int requiredLevel; // Required level to use the item
-    public EquipSlot equipSlot; // Where the item can be equipped
-
+    public Rarity rarity;
 }
 
