@@ -7,6 +7,9 @@ public class WeaponDatabase : ItemDatabase<Weapon>
     private List<Weapon> weaponsList = new List<Weapon>();
     private string searchQuery = "";
     private WeaponType? selectedWeaponType = null;
+    private int itemsPerPage = 10; // Default items per page
+    private int currentPage = 1; // Current page number
+    private int totalPages = 0; // Total number of pages
 
     public static void ShowWindow()
     {
@@ -25,43 +28,100 @@ public class WeaponDatabase : ItemDatabase<Weapon>
         // Filters
         selectedWeaponType = (WeaponType?)EditorGUILayout.EnumPopup("Weapon Type", selectedWeaponType ?? WeaponType.None);
 
-        // Count of items displayed
-        int itemsDisplayed = 0;
-
+        // Clear Filters button
+        EditorGUILayout.BeginHorizontal();
         if (GUILayout.Button("Clear Filters"))
         {
             searchQuery = "";
             selectedWeaponType = null;
             GUI.FocusControl(null); // Clear focus to ensure search text field updates visually
         }
+        EditorGUILayout.EndHorizontal();
 
-        scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+        // Items per Page control
+        EditorGUILayout.BeginHorizontal();
+        GUILayout.Label("Items Per Page:");
+        int newItemsPerPage = EditorGUILayout.IntField(itemsPerPage);
+        if (newItemsPerPage != itemsPerPage)
+        {
+            itemsPerPage = Mathf.Max(1, newItemsPerPage); // Ensure minimum items per page is 1
+            currentPage = 1; // Reset to the first page when changing items per page
+            Repaint(); // Force GUI repaint to reflect changes
+        }
+        EditorGUILayout.EndHorizontal();
+
+        // Pagination controls
+        EditorGUILayout.BeginHorizontal();
+
+        if (GUILayout.Button("First"))
+        {
+            currentPage = 1;
+        }
+
+        if (GUILayout.Button("Previous"))
+        {
+            currentPage = Mathf.Max(1, currentPage - 1);
+        }
+
+        EditorGUILayout.LabelField("Page " + currentPage + " of " + totalPages);
+
+        if (GUILayout.Button("Next"))
+        {
+            currentPage = Mathf.Min(totalPages, currentPage + 1);
+        }
+
+        if (GUILayout.Button("Last"))
+        {
+            currentPage = totalPages;
+        }
+
+        EditorGUILayout.EndHorizontal();
 
         // Load weapons from folder
         LoadWeapons();
 
+        // Count of items displayed
+        int startIndex = (currentPage - 1) * itemsPerPage;
+        int totalFilteredItems = weaponsList.Count; // Total number of items after filtering (not just the ones displayed)
+
+        // Apply search and filters
+        List<Weapon> filteredWeapons = weaponsList.FindAll(IsWeaponMatch);
+
         bool foundWeapons = false; // Flag to track if any weapons match the criteria
+        int itemsDisplayed = 0;
 
-        foreach (var weapon in weaponsList)
+        for (int i = startIndex; i < filteredWeapons.Count; i++)
         {
-            // Apply search and filters
-            if (IsWeaponMatch(weapon))
+            var weapon = filteredWeapons[i];
+
+            foundWeapons = true;
+            itemsDisplayed++;
+
+            // Check if the current weapon is selected
+            bool isSelected = (selectedItem == weapon);
+
+            // Display button with the weapon's name, highlighting if selected
+            if (GUILayout.Button(weapon.itemName, isSelected ? GUI.skin.box : GUI.skin.button, GUILayout.ExpandWidth(true)))
             {
-                foundWeapons = true;
-                itemsDisplayed++;
+                selectedItem = weapon;
+            }
 
-                // Check if the current weapon is selected
-                bool isSelected = (selectedItem == weapon);
-
-                // Display button with the weapon's name, highlighting if selected
-                if (GUILayout.Button(weapon.itemName, isSelected ? GUI.skin.box : GUI.skin.button, GUILayout.ExpandWidth(true)))
-                {
-                    selectedItem = weapon;
-                }
+            if (itemsDisplayed >= itemsPerPage)
+            {
+                break; // Stop displaying items if we've reached the itemsPerPage limit
             }
         }
 
-        EditorGUILayout.EndScrollView();
+        // Update total pages dynamically based on search/filter results and items per page
+        totalPages = Mathf.CeilToInt((float)filteredWeapons.Count / itemsPerPage);
+
+        EditorGUILayout.EndVertical();
+
+        // Display message if no weapons meet the criteria
+        if (!foundWeapons)
+        {
+            EditorGUILayout.HelpBox("No weapons meet your criteria.", MessageType.Info);
+        }
 
         // Display count of items shown
         string itemCountText = "Showing " + itemsDisplayed + " item";
@@ -70,15 +130,8 @@ public class WeaponDatabase : ItemDatabase<Weapon>
             itemCountText += "s";
         }
         EditorGUILayout.LabelField(itemCountText);
-
-        // Display message if no weapons meet the criteria
-        if (!foundWeapons)
-        {
-            EditorGUILayout.HelpBox("No weapons meet your criteria.", MessageType.Info);
-        }
-
-        EditorGUILayout.EndVertical();
     }
+
 
     private bool IsWeaponMatch(Weapon weapon)
     {
@@ -112,17 +165,17 @@ public class WeaponDatabase : ItemDatabase<Weapon>
             weapon.description = EditorGUILayout.TextField("Description: ", weapon.description);
             weapon.baseValue = EditorGUILayout.FloatField("Base Value: ", weapon.baseValue);
             weapon.requiredLevel = EditorGUILayout.IntField("Required Level: ", weapon.requiredLevel);
-            weapon.rarity = (Rarity)EditorGUILayout.EnumPopup("Rarity: ", weapon.rarity);
+            weapon.rarity = (Rarity)EditorGUILayout.EnumPopup("Rarity: ", weapon.rarity, GUILayout.Width(EditorGUIUtility.labelWidth + 100)); // Adjust width as needed
             EditorGUILayout.Space();
 
             GUILayout.Label("Weapon Properties:", EditorStyles.boldLabel);
-            weapon.weaponType = (WeaponType)EditorGUILayout.EnumPopup("Weapon Type: ", weapon.weaponType);
+            weapon.weaponType = (WeaponType)EditorGUILayout.EnumPopup("Weapon Type: ", weapon.weaponType, GUILayout.Width(EditorGUIUtility.labelWidth + 100)); // Adjust width as needed
             weapon.attackPower = EditorGUILayout.IntField("Attack Power: ", (int)weapon.attackPower);
             weapon.attackSpeed = EditorGUILayout.FloatField("Attack Speed: ", weapon.attackSpeed);
             weapon.durability = EditorGUILayout.FloatField("Durability: ", weapon.durability);
             weapon.range = EditorGUILayout.FloatField("Range: ", weapon.range);
             weapon.criticalHitChance = EditorGUILayout.FloatField("Critical Hit Chance: ", weapon.criticalHitChance);
-            weapon.equipSlot = (EquipSlot)EditorGUILayout.EnumPopup("Equip Slot: ", weapon.equipSlot);
+            weapon.equipSlot = (EquipSlot)EditorGUILayout.EnumPopup("Equip Slot: ", weapon.equipSlot, GUILayout.Width(EditorGUIUtility.labelWidth + 100)); // Adjust width as needed
         }
         else
         {

@@ -23,5 +23,5 @@ MonoBehaviour:
   attackSpeed: 5
   durability: 5
   range: 5
-  criticalHitChance: 5
+  criticalHitChance: 0
   equipSlot: 8
