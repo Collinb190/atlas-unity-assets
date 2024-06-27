@@ -5,6 +5,8 @@ using UnityEngine;
 public class WeaponDatabase : ItemDatabase<Weapon>
 {
     private List<Weapon> weaponsList = new List<Weapon>();
+    private string searchQuery = "";
+    private WeaponType? selectedWeaponType = null;
 
     public static void ShowWindow()
     {
@@ -17,25 +19,66 @@ public class WeaponDatabase : ItemDatabase<Weapon>
 
         GUILayout.Label("Weapons List", EditorStyles.boldLabel);
 
+        // Search Bar
+        searchQuery = EditorGUILayout.TextField("Search", searchQuery);
+
+        // Filters
+        selectedWeaponType = (WeaponType?)EditorGUILayout.EnumPopup("Weapon Type", selectedWeaponType ?? WeaponType.None);
+
+        if (GUILayout.Button("Clear Filters"))
+        {
+            searchQuery = "";
+            selectedWeaponType = null;
+            GUI.FocusControl(null); // Clear focus to ensure search text field updates visually
+        }
+
         scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
         // Load weapons from folder
         LoadWeapons();
 
+        bool foundWeapons = false; // Flag to track if any weapons match the criteria
+
         foreach (var weapon in weaponsList)
         {
-            // Check if the current weapon is selected
-            bool isSelected = (selectedItem == weapon);
-
-            // Display button with the weapon's name, highlighting if selected
-            if (GUILayout.Button(weapon.itemName, isSelected ? GUI.skin.box : GUI.skin.button, GUILayout.ExpandWidth(true)))
+            // Apply search and filters
+            if (IsWeaponMatch(weapon))
             {
-                selectedItem = weapon;
+                foundWeapons = true;
+
+                // Check if the current weapon is selected
+                bool isSelected = (selectedItem == weapon);
+
+                // Display button with the weapon's name, highlighting if selected
+                if (GUILayout.Button(weapon.itemName, isSelected ? GUI.skin.box : GUI.skin.button, GUILayout.ExpandWidth(true)))
+                {
+                    selectedItem = weapon;
+                }
             }
+        }
+
+        if (!foundWeapons)
+        {
+            EditorGUILayout.HelpBox("No weapons meet your criteria.", MessageType.Info);
         }
 
         EditorGUILayout.EndScrollView();
         EditorGUILayout.EndVertical();
+    }
+
+    private bool IsWeaponMatch(Weapon weapon)
+    {
+        if (!string.IsNullOrEmpty(searchQuery) && !weapon.itemName.ToLower().Contains(searchQuery.ToLower()))
+        {
+            return false;
+        }
+
+        if (selectedWeaponType.HasValue && weapon.weaponType != selectedWeaponType.Value)
+        {
+            return false;
+        }
+
+        return true;
     }
 
     protected override void DrawPropertiesSection()
