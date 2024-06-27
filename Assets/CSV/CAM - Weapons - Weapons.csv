@@ -1,0 +1,101 @@
+Item Name,Icon Path,Weapon Type,Attack Power,Attack Speed,Durability,Range,Critical Hit Chance,Base Value,Rarity,Required Level,Equip Slot,Description
+Aqua Trident,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Spear_v2_12.png,Spear,20,1.1,60,3,0.1,700,Epic,10,MainHand,Holds the power of the ocean.
+Axe of Exes,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_02.png,Axe,15,1,30,1,0.1,55,Common,4,MainHand,Breaks easily.
+Ban Hammer,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Hammer_v2_17.png,Blunt,999,0.1,999,1,5.9,999,Rare,99,TwoHand,For game moderators only.
+Bashy the Bat,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Blacksmith/Blacksmith_06_stick.png,Blunt,8,1.2,100,1.2,0.05,30,Common,2,MainHand,Great for baseball too!
+Blazing Bow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Bow_v2_05.png,Bow,10,1.4,60,12,0.1,90,Rare,8,TwoHand,Ignites arrows.
+Boom Stick,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_45_gun.png,Explosive,100,0.2,10,5,0.1,200,Epic,25,MainHand,Highly explosive. Handle with care.
+Boomerang Blade,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Bonus_icons/neutral_skills/claw_strike.png,Boomerang,10,1.2,30,8,0.15,40,Uncommon,7,MainHand,Always comes back.
+Bow of Chuckles,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Bow_18.png,Bow,5,1.5,40,10,18.7,20,Common,2,TwoHand,Giggle with every twang.
+Catty Claws,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Skinning/skinning_12_old_claw.png,Claws,14,2.5,40,0.7,0.2,60,Uncommon,5,OffHand,For the feline in you.
+Chain Heal Staff,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/staff_39.png,Staff,2,1,50,5,0,60,Common,1,MainHand,Heals nearby allies.
+Chicken Sword,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Cooking_fishing/Cooking_02_chicken_ready.png,Sword,1,5,100,1,0.5,500,Legendary,30,MainHand,Clucks upon striking
+Choppy's Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_14.png,Axe,20,0.8,80,1,0.15,70,Uncommon,5,OffHand,Choppy's favorite. Watch your fingers!
+Crescent Moon Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_19.png,Axe,22,1,70,1,0.12,85,Uncommon,5,OffHand,Lunar blessings.
+Crossbow of Calamity,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Crossbow_09.png,Crossbow,15,0.4,40,20,0.2,75,Uncommon,8,TwoHand,A crossbow that brings bad luck.
+Crossbow of Confusion,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Crossbow_10.png,Bow,22,0.7,70,15,0.18,70,Uncommon,6,Legs,Fires in unpredictable directions.
+Crossbow of Hugs,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Crossbow_v2_07.png,Crossbow,0,1,100,5,0,30,Common,2,TwoHand,Spread love
+Crossbow of Love,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Crossbow_v2_06.png,Bow,0,1,100,10,0.08,50,Rare,10,TwoHand,Makes friends
+Crystal Wand,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Jewelry/Jewelry_02_yellowcrystal.png,Wand,6,2.3,55,7,0.2,60,Uncommon,9,OffHand,Amplifies magical power.
+Cursed Blade,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_44.png,Cursed,40,1,50,1,0.2,100,Epic,20,MainHand,Immensely powerful but drains health.
+Dagger of Illusions,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Dagger_52.png,Dagger,12,2.5,30,0.5,0.3,65,Uncommon,4,OffHand,Confuses enemies.
+Dagger of Tickling,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Dagger_12.png,Staff,5,2.5,5,0.5,0.05,25,Epic,1,OffHand,So funny it hurts!
+Demon Flail,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_20.png,Flail,40,0.6,45,1.5,0.15,80,Rare,14,MainHand,Infused with demonic energies.
+Dragon Claws,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Bonus_icons/neutral_nobg/claw_strike_nobg.png,Claws,20,2.3,50,0.9,0.3,115,Epic,20,OffHand,Scales of a dragon.
+Dual Flails,Assets/CustomAssets/4000_Fantasy_Icons/Armor/500_armor/Gloves_09.png,Flail,40,0.9,60,1.3,0.1,95,Rare,9,MainHand,Double the mayhem.
+Elemental Whip,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Upgr_1_3/Skills/Melee_09.png,Whip,5,2,30,2,0.05,40,Uncommon,5,MainHand,Can manipulate elemental energies.
+Enchanted Whip,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_59_mega_fishingrod.png,Whip,10,2.5,50,2.2,0.1,70,Rare,11,MainHand,Infused with magical properties.
+Energy Saber,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_50.png,EnergyBlade,30,2.5,100,1.5,0.2,200,Epic,22,MainHand,A blade made of pure energy.
+Exotic Chakram,Assets/CustomAssets/4000_Fantasy_Icons/Armor/500_armor_vol_2/Mail/3_Mail_belt.png,Exotic,15,1.5,40,5,0.2,100,Epic,20,MainHand,Mysterious and deadly.
+Exotic Scimitar,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Sword_37.png,Exotic,20,2,60,1.1,0.25,120,Rare,16,MainHand,Unique and mesmerizing.
+Fishy Sword,Assets/CustomAssets/4000_Fantasy_Icons/Skills/500_skill_icons2/Bonus_2/Standart/66_spirit_sword.png,Sword,12,1.2,5,1.5,0.05,40,Common,3,MainHand,Made from a real fish.
+Flame-Thrower,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_54_flamethrower.png,Gun,20,0.9,40,5,0,90,Rare,18,MainHand,Sets targets ablaze.
+Galactic Wand,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Blacksmith/Blacksmith_46_magic_key.png,Wand,10,2.5,100,7,0.3,110,Legendary,25,MainHand,Holds the power of the stars.
+Gemstaff,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/staff_9.png,Staff,5,1.5,40,4,0,30,Common,2,MainHand,Good for beginners.
+Gemstone Sling,Assets/CustomAssets/4000_Fantasy_Icons/Skills/500_skill_icons2/Bonus/bg/34_wand_shot.png,Sling,5,1.6,35,10,0.1,50,Uncommon,8,MainHand,Sling with a magical gemstone pouch.
+Ghost Blade,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_46.png,Cursed,50,1,40,1.2,0.2,180,Legendary,28,MainHand,Cursed by spirits.
+Glacial Sword,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Upgr_1_3/Skills_no_bg/Ice_13_nb.png,Sword,25,1.5,70,1.2,0.15,100,Rare,8,MainHand,May freeze enemies.
+Grandma's Gun,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Gun_v2_10.png,Gun,25,0.5,30,20,0.05,80,Epic,10,MainHand,A family heirloom
+Granite Mace,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_11.png,Mace,35,0.7,80,1,0.05,55,Common,5,MainHand,Heavy but reliable.
+Gun of Bubbles,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_53_magicgun.png,Gun,0,3,10,5,0,10,Rare,1,MainHand,Bang! Pop!
+Holy Halberd,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Spear_26.png,Halberd,25,0.9,60,2.5,0.1,100,Rare,16,TwoHand,Can purify evil spirits.
+Holy Hand Grenade of Antioch,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_10_biggrenade.png,Explosive,9999,0.01,1,20,0,5000,Legendary,50,Accessory,Counts to three
+Hunting Bow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Bow_04.png,Bow,10,1.4,35,12,0.1,45,Common,6,MainHand,Good for hunting game.
+Icy Halberd,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Spear_35.png,Halberd,20,1,55,2.5,0.1,85,Rare,15,TwoHand,Freezes enemies in their tracks.
+Improvised Ladle,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Blacksmith/Blacksmith_06_stick.png,Improvised,2,1.8,10,0.5,0,10,Common,1,MainHand,For soup emergencies.
+Pine Cone,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Herbalism/Herbalism_51_cone.png,Improvised,4,1.5,20,1,0,15,Common,1,OffHand,Nature's hand grenade
+Infinity Slingshot,Assets/CustomAssets/4000_Fantasy_Icons/Skills/500_skill_icons2/Bonus/nobg/32_gun_shot_nobg.png,Sling,500,0.1,1,500,1,2000,Legendary,40,MainHand,Uses an infinite ammo of pebbles
+Judgement Hammer,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Hammer_05.png,Blunt,50,0.5,90,1,0.05,150,Epic,24,MainHand,Deals divine justice.
+Longscale Fish,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Cooking_fishing/Cooking_60_oceanfish.png,Improvised,1,0.5,3,1,0.1,5,Common,1,OffHand,It's quite slimey.
+Lunar Bow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Bow_20.png,Bow,20,1.3,60,18,0.15,100,Rare,17,TwoHand,Empowered by lunar magic.
+Mace of Faces,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_21.png,Mace,18,1.2,40,1,0.1,65,Uncommon,6,MainHand,Watch out
+Mace of Smashing,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_22.png,Mace,18,1.1,60,1,0.12,60,Uncommon,4,MainHand,Great for smashing things!
+Mace Windy,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_23.png,Mace,20,1,90,1,0.15,70,Uncommon,4,MainHand,May the force be with you.
+Magic-imbued Claws,Assets/CustomAssets/4000_Fantasy_Icons/Armor/500_armor_vol_2/Cloth/16_Cloth_gloves.png,Claws,16,2.2,40,0.8,0.25,80,Rare,13,TwoHand,Sharp and enchanted.
+Mind Blade,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_05.png,Psychic,18,1.6,60,1.3,0.25,130,Rare,17,MainHand,Sharpened by mental focus.
+Mystic Wand,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Tailoring/Tailoring_20_magic_scissors.png,Wand,4,2.2,30,6,0.25,20,Common,3,MainHand,A starter wand for novices.
+Mystical Staff,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/staff_4.png,Staff,15,1.5,40,5,0.1,90,Epic,8,TwoHand,Embedded with magical gems.
+Orcish Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Axe_44.png,Axe,30,0.7,50,1,0.1,50,Uncommon,10,MainHand,Forged in orcish fires.
+Phantom Whip,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Mining/Mining_60_ghost_ingot.png,Whip,15,2.5,70,2.5,0.1,105,Epic,22,MainHand,Moves like a ghost.
+Pickled Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_22.png,Axe,40,4,100,1,16.2,10,Uncommon,2,MainHand,It's a little soggy
+Plasma Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_48.png,EnergyBlade,40,0.8,70,1.2,0.2,130,Rare,18,MainHand,Fueled by plasma energy.
+Pointy Dagger,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Dagger_17.png,Dagger,12,2.2,50,0.5,0.2,40,Common,3,OffHand,It's pointy
+Poisoned Dagger,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Dagger_v2_22.png,Dagger,8,2.5,25,0.7,0.3,30,Common,4,OffHand,Coated in venom.
+Psychic Orb,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Jewelry/Jewelry_15_greatredcrystal.png,Psychic,10,0.8,50,5,0.3,70,Rare,15,MainHand,Controlled by your mind.
+Ring of Explosions,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Jewelry/Jewelry_35_rune_ring.png,Explosive,80,0.2,10,5,0.05,170,Legendary,27,Accessory,Causes massive explosions.
+Royal Crossbow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Crossbow_08.png,Crossbow,25,0.5,60,25,0.25,125,Epic,23,TwoHand,Worthy of royalty.
+Rubber Mallet of Doom,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Hammer_v2_08.png,Blunt,100,0.2,10,1,0,1000,Legendary,35,MainHand,Makes a squeaky noise on impact
+Rune-etched Bow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Bow_v2_08.png,Bow,12,1.2,40,15,0.1,60,Uncommon,9,TwoHand,Each arrow is guided by runes.
+Santa's Claws,Assets/CustomAssets/4000_Fantasy_Icons/Armor/500_armor_vol_2/Hat/santa_claus_hat.png,Claws,8,2,30,0.7,0.05,25,Common,2,TwoHand,Ho ho ho!
+Flamingo Staff,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Staff_v2_53.png,Staff,12,1.4,60,5,0.1,75,Uncommon,10,MainHand,Helps you stand in water
+Shadow Axe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Axe_v2_52.png,Axe,35,0.7,50,1.1,0.1,80,Rare,14,TwoHand,Melt into the shadows.
+Shockwave Hammer,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Hammer_v2_14.png,Blunt,45,0.7,85,1,0.05,100,Rare,7,TwoHand,Causes mini earthquakes.
+Sky Piercer,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Spear_v2_10.png,Spear,30,1.1,80,2,0.18,110,Epic,12,TwoHand,Can hit flying targets.
+Sling of David,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_33_grid_thrower.png,Sling,10,2.5,50,8,0.1,30,Uncommon,3,TwoHand,A biblical relic.
+Slingshot Supreme,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Engineering/Engineering_52_rifle.png,Sling,6,3,50,8,0.03,20,Common,1,TwoHand,Child's play
+Sluggish Mace,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_08.png,Blunt,50,0.4,200,1,0.02,40,Common,3,MainHand,Slow but devastating.
+Sniper Rifle,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Gun_v2_14.png,Gun,50,0.3,20,30,0.5,150,Epic,24,MainHand,Long-ranged and precise.
+Sniper Wand,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Gun_v2_04.png,Wand,4,2,100,20,0.5,80,Rare,10,MainHand,Range like you've never seen.
+Soggy Bow,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Bow_v2_08.png,Bow,8,1.2,60,10,0.02,33.03,Common,2,TwoHand,Made of wet twigs. Not very effective.
+Soul Dagger,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Dagger_v2_49.png,Dagger,10,2.6,30,0.7,0.35,95,Rare,13,OffHand,Steals the soul of its victims.
+Spear of Destiny,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Spear_34.png,Spear,30,1,100,3,0.2,100,Legendary,8,TwoHand,Choose your fate.
+Speary McSpearface,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Spear_13.png,Spear,16,1.3,60,2,0.1,55,Common,3,TwoHand,Named by the people.
+Staff of Snakes,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Staff_v2_54.png,Staff,20,1.5,60,5,0.15,80,Rare,5,TwoHand,Snakes not included.
+Stone Hammer,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Hammer_v2_01.png,Blunt,25,0.6,80,1,0,35,Common,3,MainHand,Primitive and heavy.
+Stone Slinger,Assets/CustomAssets/4000_Fantasy_Icons/Skills/500_skill_icons2/Bonus/nobg/31_gun_shot_nobg.png,Sling,2,1.5,20,8,0.05,5,Common,1,MainHand,Primitive but effective.
+Swift Boomerang,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Blacksmith/Blacksmith_47_wood.png,Boomerang,12,1.4,40,10,0.2,65,Rare,12,MainHand,Quick and agile.
+Swift Scimitar,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Sword_34.png,Sword,20,1.8,65,1.1,0.2,80,Uncommon,6,MainHand,Very fast.
+Sword of Damacolos,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_12.png,Sword,5,2,10,1,5.9,120,Common,3,TwoHand,It's long
+Sword of Holding,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_42.png,Sword,4,1,200,2,0.5,120,Epic,5,OffHand,Holds Things
+Teslacoil,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Bonus_icons/skill_b_Standart/26_Big_Lightning.png,Explosive,40,0.7,65,1,0.15,110,Epic,19,TwoHand,"Electrifies enemies, randomly."
+The Blunt Sword,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Sword_30.png,Sword,5,1,120,1.2,0.01,25,Common,1,MainHand,Not sure why it's called a sword...
+The Reaver,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Scythe_04.png,Scythe,45,0.5,50,2.5,0.1,160,Epic,21,TwoHand,Reaps souls.
+Thunder Mace,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Club_v2_23.png,Mace,40,0.7,65,1,0.15,110,Epic,19,MainHand,Electrifies enemies.
+Thunder Rod,Assets/CustomAssets/4000_Fantasy_Icons/1BonusContent/Bonus_icons/skill_b_No_bg/28_Storm2_nobg.png,Staff,8,1.3,50,5,0.1,65,Rare,12,MainHand,Calls down the fury of the storm.
+Tickling Sword,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_43.png,Sword,10,2,100,1.5,0.05,50,Uncommon,1,OffHand,A sword that causes uncontrollable laughter.
+Time Scythe,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/500_weapons/Scythe_07.png,Scythe,55,0.4,70,3,0.05,200,Legendary,26,TwoHand,Controls the flow of time.
+Vampiric Sword,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_20.png,Cursed,30,1.2,40,1.1,0.2,90,Rare,14,MainHand,Drains health from foes.
+Venomous Spear,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Spear_v2_15.png,Spear,25,1.1,50,3,0.1,90,Rare,15,TwoHand,Laced with venom.
+Void Katana,Assets/CustomAssets/4000_Fantasy_Icons/Weapons/WeaponIcons_2/Sword_v2_31.png,Katana,25,2,40,1.2,0.3,120,Rare,16,MainHand,Wielder of this is engulfed in shadow.
+Wailing Sickle,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Bonus_icons/materials_10_putty_knife.png,Sickle,18,1.3,70,1,0.12,75,Uncommon,6,MainHand,Haunted by eerie sounds.
+Water Gun Deluxe,Assets/CustomAssets/4000_Fantasy_Icons/Resources/Profession_icons/Cooking_fishing/Cooking_48_water.png,Gun,1,5,10,5,0,5,Common,1,OffHand,Not actually deadly.

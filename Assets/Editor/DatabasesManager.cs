@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEditor;
-using System.IO;
 
 public class DatabasesManager : EditorWindow
 {
@@ -26,7 +25,6 @@ public class DatabasesManager : EditorWindow
         GUILayout.Label($"Total Weapons: {AssetDatabase.FindAssets("t:Weapon").Length}");
         GUILayout.Label($"Total Potions: {AssetDatabase.FindAssets("t:Potion").Length}");
         GUILayout.Label($"Total Armors: {AssetDatabase.FindAssets("t:Armor").Length}");
-        
 
         // Separator
         EditorGUILayout.Space();
