@@ -25,6 +25,9 @@ public class WeaponDatabase : ItemDatabase<Weapon>
         // Filters
         selectedWeaponType = (WeaponType?)EditorGUILayout.EnumPopup("Weapon Type", selectedWeaponType ?? WeaponType.None);
 
+        // Count of items displayed
+        int itemsDisplayed = 0;
+
         if (GUILayout.Button("Clear Filters"))
         {
             searchQuery = "";
@@ -45,6 +48,7 @@ public class WeaponDatabase : ItemDatabase<Weapon>
             if (IsWeaponMatch(weapon))
             {
                 foundWeapons = true;
+                itemsDisplayed++;
 
                 // Check if the current weapon is selected
                 bool isSelected = (selectedItem == weapon);
@@ -57,12 +61,22 @@ public class WeaponDatabase : ItemDatabase<Weapon>
             }
         }
 
+        EditorGUILayout.EndScrollView();
+
+        // Display count of items shown
+        string itemCountText = "Showing " + itemsDisplayed + " item";
+        if (itemsDisplayed != 1)
+        {
+            itemCountText += "s";
+        }
+        EditorGUILayout.LabelField(itemCountText);
+
+        // Display message if no weapons meet the criteria
         if (!foundWeapons)
         {
             EditorGUILayout.HelpBox("No weapons meet your criteria.", MessageType.Info);
         }
 
-        EditorGUILayout.EndScrollView();
         EditorGUILayout.EndVertical();
     }
 
